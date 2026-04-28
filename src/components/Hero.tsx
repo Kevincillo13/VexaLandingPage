@@ -11,8 +11,8 @@ const Hero = () => {
 
         {/* Sharp Geometric Shapes with Exaggerated Scroll Interaction */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               y: useTransform(useScroll().scrollY, [0, 800], [0, -400]),
               opacity: useTransform(useScroll().scrollY, [0, 500], [1, 0])
             }}
@@ -20,8 +20,8 @@ const Hero = () => {
             transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-[20%] right-[15%] w-64 h-64 border-2 border-brand-violet/20 rounded-xl"
           />
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               y: useTransform(useScroll().scrollY, [0, 800], [0, -250]),
               opacity: useTransform(useScroll().scrollY, [0, 500], [1, 0])
             }}
@@ -29,8 +29,8 @@ const Hero = () => {
             transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
             className="absolute bottom-[25%] right-[30%] w-48 h-48 bg-brand-lavender/10 rounded-lg rotate-12"
           />
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               y: useTransform(useScroll().scrollY, [0, 800], [0, -600]),
               opacity: useTransform(useScroll().scrollY, [0, 500], [1, 0])
             }}
@@ -38,8 +38,8 @@ const Hero = () => {
             transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-1/2 left-[10%] w-32 h-32 border border-brand-violet/20 rounded-sm"
           />
-          <motion.div 
-            style={{ 
+          <motion.div
+            style={{
               y: useTransform(useScroll().scrollY, [0, 800], [0, -150]),
               opacity: useTransform(useScroll().scrollY, [0, 500], [1, 0])
             }}
@@ -57,12 +57,17 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-6xl md:text-[8rem] lg:text-[10rem] leading-[0.8] font-bold text-brand-black mb-6 tracking-tighter">
-            VEXA
-          </h1>
+          <div className="mb-8 lg:-ml-20">
+            <img 
+              src="/logo.png" 
+              alt="VEXA Logo" 
+              className="w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto object-contain"
+            />
+          </div>
 
-          <p className="text-lg md:text-2xl text-gray-600 max-w-lg font-inter mb-12 leading-tight">
-            No es bloqueador de playa. Es protección para el sol <span className="font-semibold text-brand-black">real.</span>
+          <p className="text-xl md:text-2xl text-gray-500 font-inter mb-8 max-w-lg leading-relaxed">
+            Diseñado para el sol real de Chihuahua.<br />
+            <span className="text-brand-black font-bold">Ligero • No blanco • Resiste sudor</span>
           </p>
 
           <a
@@ -84,9 +89,9 @@ const Hero = () => {
           style={{ y: useTransform(useScroll().scrollY, [0, 500], [0, -40]) }}
         >
           <div className="relative z-10 h-full w-full flex items-center justify-center lg:justify-end">
-            <img
-              src="/producto-hero-2.png"
-              alt="VEXA Sunscreen"
+            <img 
+              src="/producto-hero-2.png" 
+              alt="VEXA Sunscreen" 
               className="h-full w-auto object-contain drop-shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
             />
           </div>

@@ -3,20 +3,20 @@ import { motion } from 'framer-motion';
 const Solution = () => {
   const blocks = [
     {
-      title: "PROTECCIÓN REAL.",
-      desc: "No se cae con el sudor. No deja residuo. Funciona cuando lo necesitas.",
+      title: "ZERO RASTRO BLANCO.",
+      desc: "Protección invisible que se absorbe al instante. Sin capas pegajosas, sin manchas, solo piel real bajo el sol.",
       img: "/producto-lifestyle.png",
       reverse: false
     },
     {
-      title: "ADAPTADO AL MOVIMIENTO.",
-      desc: "Pensado para entrenar, trabajar, vivir. No para estar quieto en una reposera.",
+      title: "RESISTE EL SUDOR.",
+      desc: "Diseñado para quienes se mueven. Corres, entrenas, sudas; VEXA se queda contigo pase lo que pase.",
       img: "/producto-gym.png",
       reverse: true
     },
     {
-      title: "PARA LA VIDA DIARIA.",
-      desc: "Porque la exposición al sol no es sólo en vacaciones. Es todos los días.",
+      title: "PARA EL DÍA A DÍA.",
+      desc: "Porque la exposición al sol no es sólo en vacaciones. Es en la calle, en el coche, en cada entrenamiento.",
       img: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&q=80&w=1000",
       reverse: false
     }
@@ -31,7 +31,9 @@ const Solution = () => {
           viewport={{ once: true }}
           className="mb-24 text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter leading-none">DISEÑADO PARA EL SOL QUE NO TE DA TREGUA.</h2>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter leading-none">
+            DISEÑADO PARA EL SOL REAL DE CHIHUAHUA.
+          </h2>
         </motion.div>
 
         <div className="space-y-32">
